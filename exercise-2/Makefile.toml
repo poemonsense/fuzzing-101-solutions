@@ -42,11 +42,10 @@ args = ["-D", "TRIAGE_TESTER", "-I", "../libexif/libexif", "-I", "../libexif", "
 
 [tasks.build-libexif]
 cwd = "libexif"
-env = { "CC" = "${CARGO_MAKE_WORKING_DIRECTORY}/build/ex2_compiler", "LLVM_CONFIG" = "llvm-config-11"}
+env = { "CC" = "${CARGO_MAKE_WORKING_DIRECTORY}/build/ex2_compiler", "LLVM_CONFIG" = "llvm-config-12"}
 script = """
 autoreconf -fi
 ./configure --enable-shared=no --prefix="${CARGO_MAKE_WORKING_DIRECTORY}/../build/"
 make -i
 make install -i
 """
-
