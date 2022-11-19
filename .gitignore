@@ -18,3 +18,8 @@ AFLTriage/
 hirsute-rootfs/
 
 **/build/
+
+Cargo.lock
+
+.vscode
+
